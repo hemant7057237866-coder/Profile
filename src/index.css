@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    
+    body {
+      background: white !important;
+      color: black !important;
+    }
+
+    main {
+      padding-left: 0 !important;
+    }
+
+    section {
+      page-break-inside: avoid;
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+      min-height: auto !important;
+    }
+
+    .hero-section {
+      min-height: 100vh !important;
+    }
+  }
+}
